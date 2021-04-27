@@ -1,0 +1,107 @@
+/* Hi there! Welcome to Praxis!
+****** Delete this file as soon as you can! *****
+Why? We discourage using vanilla CSS to style your webpage.
+Please use something scalable such as Material-UI or JSS.
+You can learn more about these technologies at http://praxis.target.com/getting-started/styling. */
+.welcome {
+  align-items: center;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+}
+.welcome__header {
+  border-bottom: 2px #FFA280 solid;
+  padding-bottom: 15px;
+  width: 75%;
+}
+.welcome__logo {
+  color: #FFB499;
+  height: 200px;
+  padding-right: 20px;
+  width: 200px;
+}
+.welcome__list {
+  color: #0000B8;
+  counter-reset: counter;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.welcome__button {
+ border: 2px #0000B8 solid;
+ padding: 15px;
+ text-decoration: none;
+}
+.welcome__listItem{
+  counter-increment: counter;
+  display: flex;
+  margin: 10px;
+}
+.welcome__listItem::before {
+  border: 2px #0000B8 solid;
+  border-right: none;
+  content: counter(counter);
+  font-size: 110%;
+  height: 20px;
+  padding: 15px;
+  text-align: center;
+  width: 20px;
+}
+.welcome__button:active {
+  color: #240B0B;
+}
+.welcome__listItem:hover::before{
+  background-color: #FF9873;
+}
+.welcome__button:hover {
+  background-color: #FFB499;
+}
+
+
+#container {
+  visibility: hidden;
+}
+
+#loader {
+color: #008cff;
+height: 40px;
+width: 30%;
+position: absolute;
+font-family: 'Helvetica Neue','calibiri';
+font-size: 14px;
+top: 45%;
+left: 45%;
+}
+
+#element {
+  display: flex;
+  width: 400px;
+  margin: 100px auto;
+  border-radius: 3px;
+  justify-content: center;
+}
+
+.e-avatar {
+  margin: 2px;
+}
+
+.e-avatar.green {
+  background-color: #87eb87;
+}
+
+.e-avatar.violet {
+  background-color: #ee82ee;
+}
+
+.e-avatar.blue {
+  background-color: #7171e4;
+}
+
+.e-avatar.red {
+  background-color: #d86e6e;
+}
+
+.e-avatar.rose {
+  background-color: #bc8f8f;
+}
